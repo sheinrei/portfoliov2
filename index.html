@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Beaute Laurent</title>
+
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/apdm.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/technologies.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <section class="header-section">
+        <div class="header-content">
+            <div>
+                <p class="header-title">
+                    Beaute Laurent <br>
+                    Developpement Web Full-Stack
+                </p>
+                <p class="header-subtitle">
+                    Je crée des Applications modernes qui allient design audacieux et code performant
+                </p>
+            </div>
+
+            <div class="header-btn-redirect">
+                <a href="#form-section" class="header-btn">Me Contacter</a>
+                <a href="#projects-section" class="header-btn">Voir Mes Projets</a>
+            </div>
+
+            <svg class="arrow-down" id="arrow-down" xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-arrow-down-icon lucide-arrow-down">
+                <path d="M12 5v14" />
+                <path d="m19 12-7 7-7-7" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- APDM section-->
+    <section class="APDM-section">
+        <div class="APDM-text">
+            <h2 class="APDM-title-text">À propos de moi</h2>
+            <p>
+                Hello ! Je suis Laurent, étudiant en développement web full stack, curieux de nature. Je me suis
+                toujours passionné par l'informatique et j'ai saisi l'opportunité qu’offrait la formation de Développeur
+                Web pour donner une nouvelle direction à mon orientation professionnelle, plus en adéquation avec mes
+                aspirations profondes.<br>
+                Aujourd’hui, je m’épanouis en créant des applications utiles, modernes et bien pensées, aussi bien côté
+                front-end que back-end. Ce portfolio est le reflet de mon apprentissage, de ma détermination, et de mon
+                envie constante de progresser dans un domaine qui me stimule chaque jour un peu plus.
+            </p>
+        </div>
+
+        <div class="APDM-frame-progress">
+            <p class="APDM-progress-title">Compétences</p>
+            <div class="APDM-progress-row">
+                <span>Frontend</span>
+                <span>78%</span>
+            </div>
+            <progress class="APDM-progress-bar" max="100" value="78" id="strength-bar"></progress>
+
+            <div class="APDM-progress-row">
+                <span>Backend</span>
+                <span>86%</span>
+            </div>
+            <progress class="APDM-progress-bar" max="100" value="86" id="strength-bar"></progress>
+
+            <div class="APDM-progress-row">
+                <span>Gestion de projet et autonomie</span>
+                <span>91%</span>
+            </div>
+            <progress class="APDM-progress-bar" max="100" value="91" id="strength-bar"></progress>
+
+            <div class="APDM-progress-row">
+                <span>UX/UI awareness</span>
+                <span>87%</span>
+            </div>
+            <progress class="APDM-progress-bar" max="100" value="87" id="strength-bar"></progress>
+        </div>
+    </section>
+
+    <!-- Techo & tools-->
+    <section class="technologies-section">
+        <div class="technologies-container">
+            <div>
+                <p class="section-title">Technologies & Outils</p>
+                <p class="section-subtitle">Ma palette d'outils pour créer des expériences digitales exceptionnelles</p>
+            </div>
+
+            <div class="technologies-content">
+                <div class="frame-row">
+                    <div class="technologies-cards">
+                        <header>
+                            <p class="technologies-cards-logo"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-code-xml w-6 h-6">
+                                    <path d="m18 16 4-4-4-4"></path>
+                                    <path d="m6 8-4 4 4 4"></path>
+                                    <path d="m14.5 4-5 16"></path>
+                                </svg></p>
+                            <h3 class="technologies-cards-title">Frontend</h3>
+                        </header>
+                        <div>
+                            <ul>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>Jquerry</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="technologies-cards">
+                        <header>
+                            <p class="technologies-cards-logo"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-database w-6 h-6">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                                    <path d="M3 12A9 3 0 0 0 21 12"></path>
+                                </svg></p>
+                            <h3 class="technologies-cards-title">Backend</h3>
+                        </header>
+                        <div>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MySql</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="frame-row">
+                    <div class="technologies-cards">
+                        <header>
+                            <p class="technologies-cards-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-palette w-6 h-6">
+                                    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                                    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                                    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                                    </path>
+                                </svg>
+                            </p>
+                            <h3 class="technologies-cards-title">Design</h3>
+                        </header>
+                        <div>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Icons8</li>
+                                <li>Lucide</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="technologies-cards">
+                        <header>
+                            <p class="technologies-cards-logo"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-6 h-6">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                    </path>
+                                </svg></p>
+                            <h3 class="technologies-cards-title">Tools</h3>
+                        </header>
+
+                        <div>
+                            <ul>
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>VS Code</li>
+                                <li>Postman</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects-section">
+        <h2 class="section-title">Projets Récents</h2>
+        <p class="section-subtitle">Une sélection de mes réalisations les plus marquantes</p>
+
+        <div class="projects-flex">
+            <!-- Project 1 -->
+            <div class="project-row">
+
+                <div class="project-card">
+                    <h3 class="project-title">Calendyx</h3>
+                    <p class="project-description">Gestionnaire d'emplois de temps et de prise de RDV pour
+                        professionnelle</p>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Sequelize</span>
+                        <span class="tag">API REST</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">Station Météo v3</h3>
+                    <p class="project-description">App de productivité avec design minimaliste</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-row">
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">Summoners War Artefact Manager</h3>
+                    <p class="project-description">Outils de gestion d'équipement pour jeu mobile Summoners War (en
+                        cours de dev)</p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h3 class="project-title">Site Portfolio</h3>
+                    <p class="project-description">Mon site portfolio</p>
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section / Contact Form -->
+    <section class="hero" id="form-section">
+        <div class="container">
+            <h1 class="hero-title">Travaillons Ensemble</h1>
+            <p class="hero-subtitle">Un projet en tête ? N'hésitez pas à me contacter</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <img src="https://img.icons8.com/material-outlined/24/FFD700/user.png" alt="User icon"
+                        class="input-icon">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <img src="https://img.icons8.com/material-outlined/24/FFD700/email.png" alt="Email icon"
+                        class="input-icon">
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <img src="https://img.icons8.com/material-outlined/24/FFD700/chat.png" alt="Message icon"
+                        class="input-icon">
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer le Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-footer-section">
+        <div class="footer-text">
+            <h2 class="section-title">Beaute Laurent</h2>
+            <p class="section-subtitle">Developper Web Full-Stack</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/sheinrei" class="social-icon" aria-label="GitHub">
+                <img src="https://img.icons8.com/material-outlined/48/FFD700/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/laurent-beaute-534073246/" class="social-icon" aria-label="LinkedIn">
+                <img src="https://img.icons8.com/material-outlined/48/FFD700/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="mailto:l.beaute@laposte.net" class="social-icon" aria-label="Email">
+                <img src="https://img.icons8.com/material-outlined/48/FFD700/email.png" alt="Email">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Beaute Laurent. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

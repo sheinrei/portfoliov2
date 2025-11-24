@@ -1,0 +1,95 @@
+.technologies-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 50px;
+}
+
+.technologies-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.technologies-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.technologies-cards {
+    padding: 30px;
+    border: var(--border);
+    border-radius: var(--card-radius);
+    background-color: #151515;
+    width: 40%;
+    overflow: hidden;
+}
+
+.technologies-cards::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700 0%, #FFC700 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.technologies-cards:hover::before {
+    transform: scaleX(1);
+}
+
+.technologies-cards:hover {
+    transform: translateY(-4px);
+    border-color: #FFD700;
+    box-shadow: var(--card-shadow);
+    background: linear-gradient(135deg, rgba(25, 25, 25, 0.95) 0%, rgba(15, 15, 15, 1) 100%);
+}
+
+
+
+
+
+
+.technologies-cards-logo {
+    background-color: #2D2614;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.technologies-cards-logo:first-child {
+    color: var(--color-gold)
+}
+
+.technologies-cards header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.technologies-cards h3 {
+    color: var(--color-gold);
+    font-size: 20px;
+}
+
+.technologies-cards li:hover {
+    color: var(--color-gold);
+    user-select: none;
+}
+
+.technologies-cards div{
+    padding:20px 30px;
+}
