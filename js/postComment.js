@@ -33,8 +33,6 @@ btn.addEventListener("click", function (e) {
     const nom = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const commentaire = document.getElementById("commentaire").value;
-
-    console.log(nom)
     const validate = controleInput(nom, email, commentaire)
 
     if (!validate) return
@@ -46,19 +44,18 @@ btn.addEventListener("click", function (e) {
         },
         body: `nom=${encodeURIComponent(nom)}&email=${encodeURIComponent(email)}&commentaire=${encodeURIComponent(commentaire)}`
     })
-        .then(r => r.ok ? console.log("Commentaire envoyé") : alert("Erreur serveur"))
-        .then(() => {
+        .then(r => r.ok ? (
             createClassiqueModale(`<div>
-                        <p style="margin-bottom:8px">Merci d'avoir déposé votre commentaire. </p>
+                        <p style="margin-bottom:8px">Commentaire déposé avec succès.</p>
                         <p>
-                            Pour garantir un espace respectueux et agréable à tous, les commentaires inappropriés, 
-                            injurieux ou irrespectueux ne seront pas affichés.
+                            Merci pour votre commentaire, une notification de la saisi vous a été envoyé par mail.
                         </p>
-                        </div>`)
+                        </div>`),
 
-            $("#name").val("");
-            $("#email").val("");
-            $("#commentaire").val("");
-        })
+            $("#name").val(""),
+            $("#email").val(""),
+            $("#commentaire").val("")
+        ) : createClassiqueModale("<div>Une erreur est survenu, votre message n'a pas pu être enregistré.</div>"))
+       
 })
 
