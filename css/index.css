@@ -4,9 +4,9 @@
 
     --color-gold: #FFD700;
     --bg-footer: #0a0a0a;
-
-    --card-radius : 20px;
-    --card-shadow : 0 20px 50px rgba(255, 215, 0, 0.15);
+    --text-color : #b0b0b0;
+    --card-radius: 20px;
+    --card-shadow: 0 20px 50px rgba(255, 215, 0, 0.15);
 }
 
 * {
@@ -41,6 +41,57 @@ a:visited {
     color: black
 }
 
+.frame-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px
+}
+
+
+
+/* cards */
+.card {
+    padding: 30px;
+    border: var(--border);
+    border-radius: var(--card-radius);
+    background-color: #151515;
+    width: 40%;
+    overflow: hidden;
+    color: var(--text-color)
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700 0%, #FFC700 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #FFD700;
+    box-shadow: var(--card-shadow);
+    background: linear-gradient(135deg, rgba(25, 25, 25, 0.95) 0%, rgba(15, 15, 15, 1) 100%);
+}
+
+.card-subtext{
+    color: var(--text-color);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
 
 
 /* Common Section Styles */
@@ -61,11 +112,11 @@ a:visited {
 }
 
 
-.frame-row{
-    display:flex;
+.frame-row {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:70px
+    gap: 70px
 }
 
 

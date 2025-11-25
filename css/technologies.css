@@ -3,9 +3,22 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #1A1A1A;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     padding: 50px;
 }
+
+.technologies-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+
 
 .technologies-container {
     width: 80%;
@@ -29,6 +42,7 @@
     background-color: #151515;
     width: 40%;
     overflow: hidden;
+    color:var(--text-color)
 }
 
 .technologies-cards::before {
@@ -90,6 +104,6 @@
     user-select: none;
 }
 
-.technologies-cards div{
-    padding:20px 30px;
+.technologies-cards div {
+    padding: 20px 30px;
 }
