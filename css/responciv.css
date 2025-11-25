@@ -1,6 +1,9 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
-
+    .arrow-down{
+        height: 70px;
+        width: 70px;
+    }
     .header-content {
         padding: 15px
     }
@@ -99,6 +102,11 @@
 }
 
 @media (max-width: 468px) {
+
+    .header-section{
+        height: 90vh;
+    }
+
     .btn-cv {
         width: 100%;
     }
