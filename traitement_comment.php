@@ -21,8 +21,8 @@ addComment($nom, $email, $commentaire, $pdo);
 // Ajouter un commentaire dans db
 function addComment($nom, $email, $commentaire,  $pdo)
 {
-    $sql = "INSERT INTO commentaire (nom,email,date,commentaire,) 
-    VALUES (:nom, :email, NOW(), :commentaire, :valid)";
+    $sql = "INSERT INTO commentaire (nom,email,date,commentaire) 
+    VALUES (:nom, :email, NOW(), :commentaire)";
 
     $params = [
         'nom' => $nom,
