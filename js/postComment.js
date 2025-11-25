@@ -39,7 +39,7 @@ btn.addEventListener("click", function (e) {
 
     if (!validate) return
 
-    fetch("./../traitement_comment.php", {
+    fetch("../traitement_comment.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
