@@ -30,12 +30,16 @@ const btn = document.getElementById("btn-submit");
 btn.addEventListener("click", function (e) {
     e.preventDefault()
 
+    btn.disabled = true
     const nom = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const commentaire = document.getElementById("commentaire").value;
     const validate = controleInput(nom, email, commentaire)
 
-    if (!validate) return
+    if (!validate) {
+        btn.disabled = false
+        return
+    }
 
     fetch("../traitement_comment.php", {
         method: "POST",
@@ -54,8 +58,9 @@ btn.addEventListener("click", function (e) {
 
             $("#name").val(""),
             $("#email").val(""),
-            $("#commentaire").val("")
+            $("#commentaire").val(""),
+            btn.disabled = false
         ) : createClassiqueModale("<div>Une erreur est survenu, votre message n'a pas pu être enregistré.</div>"))
-       
+
 })
 

@@ -23,8 +23,9 @@
 }
 
 .classique-modale {
-    background: white;
+    background: rgb(52, 52, 52);
     border-radius: 12px;
+    border: 2px solid var(--color-gold);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     max-width: 500px;
     width: 90%;
@@ -32,11 +33,11 @@
     overflow: hidden;
     transform: scale(0.9);
     transition: transform 0.3s ease;
+    color: var(--text-color);
 }
 
 .classique-modale-header {
     padding: 24px 24px 16px;
-    border-bottom: 1px solid #e5e7eb;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,9 +45,9 @@
 
 .classique-modale-header h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
-    color: #111827;
+    color: var(--color-gold);
 }
 
 .btn-close-icon {
@@ -67,8 +68,10 @@
     color: #111827;
 }
 
+
+/* body */
 .classique-modale-body {
-    padding: 24px;
+    padding: 28px;
     overflow-y: auto;
     max-height: calc(90vh - 180px);
 }
@@ -76,20 +79,19 @@
 .classique-modale-body p {
     margin: 0;
     line-height: 1.6;
-    color: #374151;
+    color: white;
     font-size: 16px;
 }
 
 .classique-modale-footer {
     padding: 16px 24px;
-    border-top: 1px solid #e5e7eb;
     display: flex;
     justify-content: center;
     gap: 12px;
 }
 
 .btn-primary {
-    background: #3b82f6;
+    background: var(--color-gold);
     color: white;
     border: none;
     padding: 10px 24px;
@@ -101,7 +103,8 @@
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    background: var(--color-gold-hover);
+    transform: scale(1.05);
 }
 
 .btn-primary:active {

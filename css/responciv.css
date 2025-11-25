@@ -1,133 +1,153 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
 
-    .header-content{
-        padding:15px
+    .header-content {
+        padding: 15px
     }
-    .header-title{
+
+    .header-title {
         font-size: 48px;
     }
+
     /* a propos de moi */
-    .APDM-frame-photo{
+    .APDM-frame-photo {
         width: 55%;
     }
-    .photo-me{
+
+    .btn-cv {
+        width: 50%;
+    }
+
+    .photo-me {
         width: 100%;
     }
-    .APDM-section{
-        margin:10px;
-        padding:10px;
+
+    .APDM-section {
+        margin: 10px;
+        padding: 10px;
         width: 100%;
     }
-    .APDM-text{
+
+    .APDM-text {
         width: 100%;
     }
-    .frame-row{
+
+    .frame-row {
         width: 80%;
-        gap:30px;
+        gap: 30px;
         flex-direction: column;
         align-items: center;
     }
 
-    .card{
+    .card {
         width: 100% !important;
     }
 
     /* techno */
-    .technologies-container{
+    .technologies-container {
         width: 100% !important;
         align-items: center;
     }
 
-    .technologies-content{
+    .technologies-content {
         width: 100%;
         align-items: center;
     }
-    .technologies-cards-title{
+
+    .technologies-cards-title {
         font-size: 36px;
     }
-    .technologies-cards{
+
+    .technologies-cards {
         width: 100%;
         font-size: 20px;
     }
 
     /* project */
-    .project-row{
+    .project-row {
         flex-direction: column;
         height: 40%;
-        gap:40px
+        gap: 40px
     }
 }
 
 @media (max-width: 768px) {
-
-    .header-btn-redirect{
-        display: flex;
-        flex-direction: column;
-        gap:15px
+    .btn-cv {
+        width: 70%;
     }
 
-    .APDM-frame-progress{
+    .header-btn-redirect {
+        display: flex;
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .APDM-frame-progress {
         width: 100%;
     }
 
-    .project-row{
+    .project-row {
         width: 100%;
         align-items: center;
     }
 
-    .project-card{
+    .project-card {
         width: 90%;
-        padding:10px
+        padding: 10px
     }
 
 }
 
 @media (max-width: 468px) {
-
-    .header-title{
-        font-size: 3rem;
-        padding:15px
+    .btn-cv {
+        width: 100%;
     }
-    
-    .section-subtitle{
+
+    .header-title {
+        font-size: 3rem;
+        padding: 15px
+    }
+
+    .section-subtitle {
         margin-bottom: 20px;
     }
 
-    .APDM-section{
-        margin:0
+    .APDM-section {
+        margin: 0
     }
 
-    .projects-section,.hero{
-        padding:30px 20px;
+    .projects-section,
+    .hero {
+        padding: 30px 20px;
         min-width: none;
     }
-    .frame-row{
+
+    .frame-row {
         width: 100%;
     }
 
-    .technologies-section{
-        padding:10px
+    .technologies-section {
+        padding: 10px
     }
 
-    .technologies-content{
+    .technologies-content {
         width: 100%;
     }
 
-    .technologies-container{
+    .technologies-container {
         width: 100%;
     }
 
-    .technologies-cards{
+    .technologies-cards {
         width: 100%;
     }
 
-    .portfolio-footer-section{
+    .portfolio-footer-section {
         flex-direction: column;
     }
 
-    .hero-title{
-        padding:15px;
-        font-size:3rem
+    .hero-title {
+        padding: 15px;
+        font-size: 3rem
     }
 }
